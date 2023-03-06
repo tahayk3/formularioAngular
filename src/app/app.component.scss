@@ -1,0 +1,102 @@
+.box{
+  height: 200px;
+  height: 200px;
+  overflow-y: scroll;
+  background: red;
+}
+
+.products--grid {
+  display: flex;
+  flex-direction: column;
+  div {
+    img{
+      width: 100%;;
+      border-radius: 30px;
+    }
+    h2,p{
+      margin:0px;
+    }
+  }
+}
+
+@media screen and (min-width: 40em){
+  .products--grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media screen and (min-width: 50em){
+  .products--grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 15px;
+  }
+}
+
+.styles{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.message-error{
+  background: rgb(214, 34, 34);
+  text-align:center;
+  color:white;
+  opacity: 0;
+  transition: all linear .5s;
+  font: small-caps 100%/120% serif;
+  &.invalid{
+    opacity: 1;
+  }
+}
+
+.line-error{
+  border-bottom: 1px solid;
+  &.invalid{
+    border-color:red;
+  }
+  &.valid{
+    border-color:rgb(35, 229, 35);
+  }
+}
+
+//formulario
+.formulario-registro{
+
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px 6px 20px 6px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+
+
+}
+.boton-registro{
+  height: 50px;
+  width: 100px;
+  background: #102f70;
+  border: 1px solid #ecf1ea;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  float: right;
+  font: small-caps 100%/200% serif;
+}
+
+.estilo-input{
+   width: 100%;
+   height: 30px;
+   background: black;
+   border: 2px solid #393939;
+   border-radius: 20px 6px 20px 6px;
+   color: #ffffff;
+   font-size: 25px;
+   padding: 5px;
+}
+
